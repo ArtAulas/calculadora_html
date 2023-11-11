@@ -1,0 +1,44 @@
+.botao{
+    display:inline;
+}
+
+.linha{
+    display:flex;
+    justify-content: space-around;
+    padding:5px;
+}
+
+.tela{
+    height:21px;
+}
+
+.linha_tela{
+    border:2px solid red;
+    padding:5px;
+    background-color: black;
+    color:white;
+    font-size: 20px;
+
+    display:flex;
+    justify-content: end;
+}
+
+.linha_operadores{
+    border:1px solid black;
+    display:flex;
+    justify-content: space-around;
+    padding:5px;
+}
+
+body{
+    padding-top: 10%;
+    padding-left: 42%;
+    padding-right: 38%;
+    background-color: lightblue;
+}
+
+.calc{
+    border:3px solid black;
+    width:200px;
+    background-color:lightcyan;
+}

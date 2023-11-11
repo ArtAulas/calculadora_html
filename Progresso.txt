@@ -1,3 +1,8 @@
+HTML-Feito(a aprimorar)
+Css-Feito(a aprimorar)
+
+JavaScript-A fazer
+
 variáveis a serem criadas:
 -botoes de nro(query selector)
 -botoes operadores(query selector)

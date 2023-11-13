@@ -21,7 +21,9 @@ função nos operadores:
 
 >{  
 variável n1 recebe valor da tela como int  
-botao igual recebe funcao da operação no evento onclick  
+já realiza a operação  
+reseta tela  
+
 }
 
 função no igual:
@@ -35,7 +37,12 @@ tela recebe valor do resultado
 
 função na tela:  
 
->{
+>{  
     se o número na tela for maior q 19 caracteres,  
-    retira o primeiro número, depois adiciona o selecionado
+    retira o primeiro número, depois adiciona o selecionado  
+}
+
+botão igual:  
+>{  
+    mostra o resultado  
 }

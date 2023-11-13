@@ -44,3 +44,8 @@ b0.addEventListener("click",function (){
     tela.textContent+='0'
 })
 
+let reset=document.querySelector("button.reseta")
+
+reset.onclick=function(){
+    tela.textContent=''
+}

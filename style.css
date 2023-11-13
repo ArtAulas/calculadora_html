@@ -41,4 +41,5 @@ body{
     border:3px solid black;
     width:200px;
     background-color:lightcyan;
+    border-radius: 5px;
 }

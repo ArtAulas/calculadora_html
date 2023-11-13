@@ -32,3 +32,10 @@ operação é realizada
 resultado recebe valor da operação  
 tela recebe valor do resultado  
 }
+
+função na tela:  
+
+>{
+    se o número na tela for maior q 19 caracteres,  
+    retira o primeiro número, depois adiciona o selecionado
+}

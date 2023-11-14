@@ -12,6 +12,7 @@ let b9=document.querySelector("button.nro9")
 let b0=document.querySelector("button.nro0")
 
 let tela=document.querySelector("div.tela")
+let total=0
 
 b1.addEventListener("click",function (){
     tela.textContent+='1'
@@ -46,6 +47,70 @@ b0.addEventListener("click",function (){
 
 let reset=document.querySelector("button.reseta")
 
-reset.onclick=function(){
+function reseta(){
+    tela.textContent=''
+    total=0
+}
+
+reset.onclick=reseta
+
+let buttonBack=document.querySelector("button.backspace")
+
+buttonBack.onclick=function(){
+    tela.textContent=tela.textContent.slice(0,-1)
+}
+
+let btIgual=document.querySelector("button.igual")
+
+btIgual.addEventListener("click",function(){
+    if (total!=0){
+        tela.textContent=total
+        return
+    }
+})
+
+let btSoma=document.querySelector("button.soma")
+
+function soma(){
+    total+=Number(tela.textContent)
     tela.textContent=''
 }
+btSoma.onclick = soma
+
+
+let btSubtrai=document.querySelector("button.subtrai")
+
+function subtracao(){
+    if (total!=0){
+        total=total-Number(tela.textContent)}
+    else{
+        total+=Number(tela.textContent)}
+    tela.textContent=''
+}
+btSubtrai.onclick = subtracao
+
+
+let btMulti=document.querySelector("button.mult")
+
+function multiplicacao(){
+    if (total!=0){
+        total=total*Number(tela.textContent)}
+    else{
+        total=Number(tela.textContent)}
+    tela.textContent=''
+}
+btMulti.onclick = multiplicacao
+
+
+let btDivide=document.querySelector("button.divide")
+
+function divisao(){
+    if(total==0){
+        total+=Number(tela.textContent)}
+    if (Number(tela.textContent)!=0){
+        total=total/Number(tela.textContent)}
+    else{
+        alert("Não realize divisões por zero >:(")}
+    tela.textContent=''
+}
+btDivide.onclick = divisao

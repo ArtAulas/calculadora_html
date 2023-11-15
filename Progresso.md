@@ -1,6 +1,7 @@
 HTML-Feito(pode aprimorar)  
 CSS-Feito(pode aprimorar)  
-JavaScript (Aproximadamente 50%) 
+JavaScript (Aproximadamente 99%) 
+Último fator a ser alterado: divisão não ocorre corretamente   
 
 variáveis a serem criadas:
 - botoes de nro(query selector)  

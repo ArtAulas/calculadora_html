@@ -180,9 +180,10 @@ let btDivide=document.querySelector("button.divide")
 function divisao(){
     if(total==0){
         total+=Number(tela.textContent)}
-    if (Number(tela.textContent)!=0){
-        total=total/(Number(tela.textContent))}
-    else{
+        else{
+            total=total/(Number(tela.textContent))
+        }
+    if (Number(tela.textContent)==0){
         alert("Não realize divisões por zero >:(")}
     tela.textContent=''
     operadorAnterior='divi'

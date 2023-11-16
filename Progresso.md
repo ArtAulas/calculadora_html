@@ -1,9 +1,11 @@
+Projeto finalizado
+===
+
 HTML-Feito(pode aprimorar)  
 CSS-Feito(pode aprimorar)  
-JavaScript (Aproximadamente 99%) 
-Último fator a ser alterado: divisão não ocorre corretamente   
+JavaScript-Feito    
 
-variáveis a serem criadas:
+Variáveis a serem criadas:
 - botoes de nro(query selector)  
 - botoes operadores(query selector)  
 - botao igual(qlqr maneira)  

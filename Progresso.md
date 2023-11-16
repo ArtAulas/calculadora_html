@@ -3,7 +3,7 @@ Projeto finalizado
 
 HTML-Feito(pode aprimorar)  
 CSS-Feito(pode aprimorar)  
-JavaScript-Feito    
+JavaScript-Feito(pode aprimorar)    
 
 Variáveis a serem criadas:
 - botoes de nro(query selector)  

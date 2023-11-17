@@ -1,5 +1,6 @@
 alert("Bem vindo(a) a Calculadora HTML")
 
+//-definir uma variável para cada botão relacionado a um número
 let b1=document.querySelector("button.nro1")
 let b2=document.querySelector("button.nro2")
 let b3=document.querySelector("button.nro3")
@@ -11,11 +12,18 @@ let b8=document.querySelector("button.nro8")
 let b9=document.querySelector("button.nro9")
 let b0=document.querySelector("button.nro0")
 
+//definir as seguintes variáveis
 let tela=document.querySelector("div.tela")
 let total=0
 let operadorAnterior=''
 let igualSelecionado=false
 
+/*
+para cada variável contendo um botão de número
+é definida uma função que adiciona o número em formato string à tela
+
+também testa se o número foi pressionado após o igual, para poder limpar da tela o resultado anterior
+*/
 b1.addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
@@ -87,6 +95,7 @@ b0.addEventListener("click",function (){
     tela.textContent+='0'
 })
 
+//definição de variável e função para o botão "Reseta"
 let reset=document.querySelector("button.reseta")
 
 function reseta(){
@@ -95,21 +104,25 @@ function reseta(){
     igualSelecionado=false
     operadorAnterior=''
 }
-
 reset.onclick=reseta
 
+
+//definição de variável e função para o botão "Backspace"
 let buttonBack=document.querySelector("button.backspace")
 
 buttonBack.onclick=function(){
     tela.textContent=tela.textContent.slice(0,-1)
 }
 
+
+//definição de variável e função para o botão "C"
 let cancela=document.querySelector("button.cancela")
 
 cancela.onclick=function(){
     tela.textContent=''
 }
 
+//definição de variável e função para o botão "Igual"
 let btIgual=document.querySelector("button.igual")
 
 btIgual.addEventListener("click",function(){
@@ -139,6 +152,8 @@ btIgual.addEventListener("click",function(){
     igualSelecionado=true
 })
 
+
+//definição de variável e função para o botão "Soma"
 let btSoma=document.querySelector("button.soma")
 
 function soma(){
@@ -148,7 +163,7 @@ function soma(){
 }
 btSoma.onclick = soma
 
-
+//definição de variável e função para o botão "Subtração"
 let btSubtrai=document.querySelector("button.subtrai")
 
 function subtracao(){
@@ -161,7 +176,7 @@ function subtracao(){
 }
 btSubtrai.onclick = subtracao
 
-
+//definição de variável e função para o botão "Multiplicação"
 let btMulti=document.querySelector("button.mult")
 
 function multiplicacao(){
@@ -174,7 +189,7 @@ function multiplicacao(){
 }
 btMulti.onclick = multiplicacao
 
-
+//definição de variável e função para o botão "Divisão"
 let btDivide=document.querySelector("button.divide")
 
 function divisao(){

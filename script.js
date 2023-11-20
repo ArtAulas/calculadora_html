@@ -1,99 +1,94 @@
 alert("Bem vindo(a) a Calculadora HTML")
 
-//-definir uma variável para cada botão relacionado a um número
-let b1=document.querySelector("button.nro1")
-let b2=document.querySelector("button.nro2")
-let b3=document.querySelector("button.nro3")
-let b4=document.querySelector("button.nro4")
-let b5=document.querySelector("button.nro5")
-let b6=document.querySelector("button.nro6")
-let b7=document.querySelector("button.nro7")
-let b8=document.querySelector("button.nro8")
-let b9=document.querySelector("button.nro9")
-let b0=document.querySelector("button.nro0")
-
 //definir as seguintes variáveis
 let tela=document.querySelector("div.tela")
 let total=0
 let operadorAnterior=''
 let igualSelecionado=false
 
+//cria uma lista com todos os botoes numerados
+lista_botoes=[]
+for (let i=0;i<10;i++){
+    lista_botoes.push(document.querySelector("button.nro"+i))
+}
+
 /*
-para cada variável contendo um botão de número
+para cada botão contendo um de número
 é definida uma função que adiciona o número em formato string à tela
 
 também testa se o número foi pressionado após o igual, para poder limpar da tela o resultado anterior
 */
-b1.addEventListener("click",function (){
+lista_botoes[1].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='1'
 })
-b2.addEventListener("click",function (){
+lista_botoes[2].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='2'
 })
-b3.addEventListener("click",function (){
+lista_botoes[3].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='3'
 })
-b4.addEventListener("click",function (){
+lista_botoes[4].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='4'
 })
-b5.addEventListener("click",function (){
+lista_botoes[5].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='5'
 })
-b6.addEventListener("click",function (){
+lista_botoes[6].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='6'
 })
-b7.addEventListener("click",function (){
+lista_botoes[7].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='7'
 })
-b8.addEventListener("click",function (){
+lista_botoes[8].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='8'
 })
-b9.addEventListener("click",function (){
+lista_botoes[9].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='9'
 })
-b0.addEventListener("click",function (){
+lista_botoes[0].addEventListener("click",function (){
     if (igualSelecionado){
         tela.textContent=''
         igualSelecionado=false
     }
     tela.textContent+='0'
 })
+
 
 //definição de variável e função para o botão "Reseta"
 let reset=document.querySelector("button.reseta")

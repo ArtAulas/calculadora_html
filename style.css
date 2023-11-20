@@ -42,9 +42,16 @@ body{
     padding-left: 42%;
     padding-right: 38%;
     background-color: lightblue;
-    
 }
+/*
+display:flex;
+align-itens:center;
+justigy:content:center;
 
+padding-top: 10%;
+padding-left: 42%;
+padding-right: 38%;
+*/
 .calc{
     border:3px solid black;
     width:200px;

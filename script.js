@@ -18,77 +18,17 @@ para cada botão contendo um de número
 
 também testa se o número foi pressionado após o igual, para poder limpar da tela o resultado anterior
 */
-lista_botoes[1].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='1'
-})
-lista_botoes[2].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='2'
-})
-lista_botoes[3].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='3'
-})
-lista_botoes[4].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='4'
-})
-lista_botoes[5].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='5'
-})
-lista_botoes[6].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='6'
-})
-lista_botoes[7].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='7'
-})
-lista_botoes[8].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='8'
-})
-lista_botoes[9].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='9'
-})
-lista_botoes[0].addEventListener("click",function (){
-    if (igualSelecionado){
-        tela.textContent=''
-        igualSelecionado=false
-    }
-    tela.textContent+='0'
-})
 
+for (let i=0;i<10;i++){
+    lista_botoes[i].addEventListener("click",function (){
+        if (igualSelecionado){
+            tela.textContent=''
+            igualSelecionado=false
+        }
+        tela.textContent+=lista_botoes[i].textContent
+        console.log('chamada função ao botão '+i)
+    })
+};
 
 //definição de variável e função para o botão "Reseta"
 let reset=document.querySelector("button.reseta")
@@ -98,6 +38,7 @@ function reseta(){
     total=0
     igualSelecionado=false
     operadorAnterior=''
+    console.log('chamada função ao botão reseta')
 }
 reset.onclick=reseta
 
@@ -107,6 +48,7 @@ let buttonBack=document.querySelector("button.backspace")
 
 buttonBack.onclick=function(){
     tela.textContent=tela.textContent.slice(0,-1)
+    console.log('chamada função ao botão backspace')
 }
 
 
@@ -115,6 +57,7 @@ let cancela=document.querySelector("button.cancela")
 
 cancela.onclick=function(){
     tela.textContent=''
+    console.log('chamada função ao botão c')
 }
 
 //definição de variável e função para o botão "Igual"

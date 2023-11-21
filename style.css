@@ -28,20 +28,21 @@
 
     display:flex;
     justify-content: end;
+
 }
 
 .linha_operadores{
-    border:1px solid black;
+    /*border:1px solid black;*/
     display:flex;
     justify-content: space-around;
     padding:5px;
 }
 
 body{
-    padding-top: 10%;
-    padding-left: 42%;
-    padding-right: 38%;
-    background-color: lightblue;
+    background-image:linear-gradient(to right,lightblue,rgb(248, 150, 248));
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top:10%;
 }
 /*
 display:flex;
@@ -54,18 +55,23 @@ padding-right: 38%;
 */
 .calc{
     border:3px solid black;
-    width:200px;
-    background-color:lightcyan;
+    /*width:20%;*/
+    /*background-color:darkslategrey;*/
     border-radius: 5px;
 }
 
 button{
     border:1px solid black;
     border-radius: 4px;
-    background-color: lightgray;
+    font-size: larger;
 }
 
 button:active{
     background-color: black;
     color:white
+}
+
+.painel{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }

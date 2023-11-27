@@ -1,3 +1,13 @@
+header{
+    text-align: center;
+    font-size: 150%;
+
+}
+
+header:hover{
+    color:white;
+}
+
 .botao{
     display:inline;
 }
@@ -38,25 +48,17 @@
     padding:5px;
 }
 
-body{
-    background-image:linear-gradient(to right,lightblue,rgb(248, 150, 248));
-    padding-left: 40%;
-    padding-right: 40%;
-    padding-top:10%;
+html{
+    min-height: 100%;
+    background-image:radial-gradient(pink,blue);
+    display:flex;
+    justify-content:center;
+    align-items: center;
 }
-/*
-display:flex;
-align-itens:center;
-justigy:content:center;
 
-padding-top: 10%;
-padding-left: 42%;
-padding-right: 38%;
-*/
 .calc{
     border:3px solid black;
-    /*width:20%;*/
-    /*background-color:darkslategrey;*/
+    width:300px;
     border-radius: 5px;
 }
 
@@ -64,10 +66,13 @@ button{
     border:1px solid black;
     border-radius: 4px;
     font-size: larger;
+
+    background-image: linear-gradient(white,grey);
 }
 
 button:active{
     background-color: black;
+    background-image: none;
     color:white
 }
 
